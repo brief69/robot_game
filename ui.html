@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- ビューポートの設定: モバイルフレンドリーなウェブページを作成する -->
+    <!-- Setting the viewport: Making the webpage mobile-friendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロボットシミュレーション</title>
+    <!-- スタイルシートのリンク -->
+    <!-- Linking the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScriptファイルのリンク -->
+    <!-- Linking the JavaScript file -->
+    <script src="ui.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- ページのタイトル -->
+        <!-- Page title -->
+        <h1>ロボットシミュレーションアプリ</h1>
+    </header>
+    <main>
+        <!-- シミュレーションエリアのセクション -->
+        <!-- Section for the simulation area -->
+        <section id="simulationArea">
+            <h2>シミュレーションエリア</h2>
+            <canvas id="simulationCanvas"></canvas>
+        </section>
+        <aside>
+            <!-- ロボットのコントロールセクション -->
+            <!-- Section for robot controls -->
+            <section id="robotControls">
+                <h2>ロボットコントロール</h2>
+                <button id="startSimulation">シミュレーション開始</button>
+                <button id="stopSimulation" disabled>シミュレーション停止</button>
+            </section>
+            <!-- ロボットのステータスセクション -->
+            <!-- Section for robot status -->
+            <section id="robotStatus">
+                <h2>ロボットステータス</h2>
+                <ul>
+                    <li>速度: <span id="speed">0</span> m/s</li>
+                    <li>バッテリー: <span id="battery">100%</span></li>
+                    <li>障害物検出: <span id="obstacleDetected">なし</span></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <!-- 著作権表示 -->
+        <!-- Copyright notice -->
+        <p>&copy; 2023 ロボットシミュレーションプロジェクト</p>
+    </footer>
+</body>
+</html>

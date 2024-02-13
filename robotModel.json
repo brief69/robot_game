@@ -1,0 +1,51 @@
+{
+  "id": "basicRobot",
+  "name": "Basic Simulation Robot",
+  "description": "A simple robot model for basic movement and interaction simulation in a virtual environment.",
+  "dimensions": {
+    "height": 1.5,
+    "width": 0.5,
+    "depth": 0.75
+  },
+  "mass": 50,
+  "sensors": [
+    {
+      "type": "distance",
+      "position": "front",
+      "range": 10
+    },
+    {
+      "type": "touch",
+      "position": "hands",
+      "sensitivity": "high"
+    }
+  ],
+  "actuators": [
+    {
+      "type": "wheel",
+      "position": "left",
+      "maxSpeed": 5
+    },
+    {
+      "type": "wheel",
+      "position": "right",
+      "maxSpeed": 5
+    },
+    {
+      "type": "arm",
+      "position": "left",
+      "degreesOfFreedom": 3
+    },
+    {
+      "type": "arm",
+      "position": "right",
+      "degreesOfFreedom": 3
+    }
+  ],
+  "power": {
+    "type": "battery",
+    "capacity": 1000,
+    "chargeTime": 2,
+    "endurance": 8
+  }
+}

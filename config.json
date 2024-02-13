@@ -1,0 +1,30 @@
+{
+  "simulationSettings": {
+    "gravity": 9.81,
+    "timeStep": 0.01,
+    "simulationSpeed": 1,
+    "backgroundColor": "#f0f0f0"
+  },
+  "robotSettings": {
+    "initialPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "initialRotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "modelPath": "robotModel.json"
+  },
+  "uiSettings": {
+    "showFPS": true,
+    "controlPanelEnabled": true,
+    "simulationControls": {
+      "startPauseButtonId": "startPauseSimulation",
+      "resetButtonId": "resetSimulation"
+    }
+  }
+}
+
